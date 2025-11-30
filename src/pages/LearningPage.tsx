@@ -1,167 +1,137 @@
 import React from "react";
-import { Play, Volume2, Info, ChevronRight } from "lucide-react";
-import Marquee from "../components/Marquee"; // correct path based on your structure
-   
+import { Play, ChevronRight, Volume2 } from "lucide-react";
 
 export default function LearningPage() {
   return (
-    <div className="min-h-screen bg-[#F7F2E7] text-[#003781]">
+    <div className="w-full min-h-screen bg-[#F8F3E9] px-6 py-8">
+      {/* Title Bar */}
+      <div className="w-full flex items-center justify-between mb-6">
+        <h1 className="text-3xl font-bold text-[#003781] flex items-center gap-2">
+          Know Your Protection
+        </h1>
+        <button className="flex items-center gap-2 text-[#003781] font-medium">
+          <Volume2 size={20} />
+          Hear Guide
+        </button>
+      </div>
 
-      {/* ===== PAGE CONTAINER ===== */}
-      <div className="max-w-7xl mx-auto px-5 py-8">
+      {/* FULL WIDTH CENTER STRIP (Your highlighted purple area) */}
+      <div className="w-full bg-white rounded-xl shadow-sm p-4 mb-8 border border-gray-200">
+        <p className="text-center text-gray-700 font-medium">
+          Insurance Name: PMFBY (Pradhan Mantri Fasal Bima Yojana)
+          – Crop insurance covering farmers against yield loss, weather shocks, and disasters.
+        </p>
+      </div>
 
-        {/* ===== TOP HEADER ===== */}
-        <div className="flex justify-between items-center bg-white shadow-sm border border-[#E3EAF4] rounded-xl px-5 py-4 mb-8">
-          <h1 className="text-xl md:text-2xl font-bold tracking-tight flex items-center gap-2">
-            🌾 Know Your Protection
-          </h1>
+      {/* MAIN 3-COLUMN LAYOUT */}
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
-          <div className="flex items-center gap-4">
-            <button className="flex items-center gap-1 text-sm text-[#003781] hover:opacity-80 font-medium">
-              <Volume2 size={18} /> Hear Guide
-            </button>
-
-            {/* <div className="bg-[#003781] text-white px-4 py-1.5 rounded-lg font-semibold shadow-sm">
-              Hi, Suresh
-            </div> */}
+        {/* LEFT PANEL – VIDEO BOX */}
+        <div className="lg:col-span-1 bg-white shadow rounded-xl p-4 flex flex-col items-center">
+          <div className="w-full h-[380px] bg-gray-200 rounded-xl flex items-center justify-center">
+            <Play size={48} className="text-[#003781]" />
           </div>
+          <p className="text-xs text-center text-gray-600 mt-3">
+            30-sec crop insurance explainer • in your language
+          </p>
         </div>
 
-        {/* ===== MAIN GRID ===== */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {/* CENTER PANEL – MAIN CONTENT */}
+        <div className="lg:col-span-2 flex flex-col gap-6">
 
-          {/* LEFT: VIDEO THUMBNAIL */}
-          <div className="lg:col-span-1 bg-white border border-[#D6DFEB] rounded-2xl shadow-sm p-4">
-            <div className="relative rounded-xl overflow-hidden aspect-[9/16] group cursor-pointer shadow-md">
-              
-              <div className="absolute inset-0 flex justify-center items-center">
-                <div className="bg-white bg-opacity-85 p-4 rounded-full shadow-lg">
-                  <Play size={36} className="text-[#003781]" />
-                </div>
+          {/* Section – Understand Insurance */}
+          <div className="bg-white rounded-xl shadow p-4 border">
+            <h2 className="text-xl font-semibold text-[#003781] mb-3 flex items-center gap-2">
+              <span>ℹ️</span> Understand Your Insurance
+            </h2>
+
+            <div className="grid grid-cols-3 gap-4">
+              <div className="bg-[#EEF4FF] p-4 rounded-xl text-center">
+                <p className="font-semibold text-[#003781]">Crop Risk</p>
+                <p className="text-sm text-gray-600">Covers crop loss due to rain</p>
               </div>
-            </div>
-            <p className="mt-3 text-xs text-gray-600 text-center">
-              30-sec crop insurance explainer • in your language
-            </p>
-          </div>
 
-          {/* CENTER MAIN CONTENT */}
-          <div className="lg:col-span-2 flex flex-col gap-6">
-
-            {/* ===== UNDERSTAND YOUR INSURANCE ===== */}
-            <div className="bg-white rounded-2xl border border-[#D6DFEB] shadow-sm p-6">
-              <h2 className="font-bold text-lg mb-5 flex items-center gap-2">
-                <Info size={20} /> Understand Your Insurance
-              </h2>
-
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-
-                <InfoCard
-                 
-                  title="Crop Risk"
-                  desc="Covers crop loss due to rain"
-                />
-
-                <InfoCard
-                 
-                  title="Benefit"
-                  desc="Assured compensation"
-                />
-
-                <InfoCard
-                  
-                  
-                  title="Docs"
-                  desc="Simple document steps"
-                />
+              <div className="bg-[#EEF4FF] p-4 rounded-xl text-center">
+                <p className="font-semibold text-[#003781]">Benefit</p>
+                <p className="text-sm text-gray-600">Assured compensation</p>
               </div>
-            </div>
 
-            {/* ===== NEXT STEPS CAROUSEL ===== */}
-            <div className="bg-white rounded-2xl border border-[#D6DFEB] shadow-sm p-6">
-              <h3 className="font-bold text-lg mb-3">What To Do Next</h3>
-
-              <div className="flex justify-between items-center">
-
-                <div>
-                  <p className="font-semibold">Step 1: Check Eligibility</p>
-                  <p className="text-sm text-gray-600">
-                    Tap next to see more steps
-                  </p>
-                </div>
-
-                <button className="p-3 bg-[#003781] text-white rounded-full shadow hover:bg-[#002A5D] transition">
-                  <ChevronRight size={20} />
-                </button>
+              <div className="bg-[#EEF4FF] p-4 rounded-xl text-center">
+                <p className="font-semibold text-[#003781]">Docs</p>
+                <p className="text-sm text-gray-600">Simple document steps</p>
               </div>
             </div>
           </div>
 
-          {/* RIGHT SIDE COLUMN */}
-          <div className="lg:col-span-1 flex flex-col gap-6">
+          {/* Section – What To Do Next */}
+          <div className="bg-white rounded-xl shadow p-4 border">
+            <h2 className="text-xl font-semibold text-[#003781]">What To Do Next</h2>
 
-            {/* ===== PROGRESS TRACKER ===== */}
-            <div className="bg-white rounded-2xl border border-[#D6DFEB] shadow-sm p-6">
-              <h3 className="font-semibold mb-4 text-[#003781]">Your Progress</h3>
-
-              <Stage label="Learning" active />
-              <Stage label="Survey Completed" />
-              <Stage label="Options Ready" />
-              <Stage label="Claim Assistance" />
-            </div>
-
-            {/* ===== LATEST ALERTS ===== */}
-            <div className="bg-white rounded-2xl border border-[#D6DFEB] shadow-sm p-6">
-              <h3 className="font-semibold mb-2">Latest Alerts</h3>
-
-              <div className="overflow-hidden rounded-md bg-[#F8FBFF] border border-[#E1E8F4]">
-                <Marquee speed={25} className="text-sm py-2 px-3">
-                  ⚠ Beware of fake insurance agents • PMFBY deadline extended •
-                  New update issued for Rabi season • Check eligibility today
-                </Marquee>
+            <div className="flex justify-between items-center mt-2">
+              <div>
+                <p className="font-medium text-[#003781]">Step 1: Check Eligibility</p>
+                <p className="text-sm text-gray-600">Tap next to see more steps</p>
               </div>
-              {/* <Marquee speed={25}>
-                ⚠ Beware of fake insurance agents • PMFBY deadline extended •
-                New update issued for Rabi season • Check eligibility today
-              </Marquee> */}
 
-
-              <button className="flex items-center gap-2 mt-3 text-sm font-medium text-[#003781]">
-                <Volume2 size={16} /> Tap to Listen
+              <button className="bg-[#003781] text-white p-3 rounded-full shadow">
+                <ChevronRight />
               </button>
             </div>
+          </div>
 
+          {/* Section – Comparison Tools / Sources */}
+          <div className="bg-white rounded-xl shadow p-4 text-center border">
+            <p className="text-gray-700 font-medium">
+              Sources like Allianz from where insurance comparisons can be viewed.
+            </p>
           </div>
         </div>
 
+        {/* RIGHT PANEL – PROGRESS + ALERTS */}
+        <div className="lg:col-span-1 flex flex-col gap-6">
+
+          {/* Progress */}
+          <div className="bg-white rounded-xl shadow p-4 border">
+            <h2 className="text-xl font-semibold text-[#003781]">Your Progress</h2>
+
+            <ul className="mt-3 space-y-2 text-gray-700">
+              <li className="flex items-center gap-2">
+                <span className="w-3 h-3 bg-[#003781] rounded-full"></span>
+                Learning
+              </li>
+
+              <li className="flex items-center gap-2">
+                <span className="w-3 h-3 border border-gray-300 rounded-full"></span>
+                Survey Completed
+              </li>
+
+              <li className="flex items-center gap-2">
+                <span className="w-3 h-3 border border-gray-300 rounded-full"></span>
+                Options Ready
+              </li>
+
+              <li className="flex items-center gap-2">
+                <span className="w-3 h-3 border border-gray-300 rounded-full"></span>
+                Claim Assistance
+              </li>
+            </ul>
+          </div>
+
+          {/* Alerts */}
+          <div className="bg-white rounded-xl shadow p-4 border">
+            <h2 className="text-xl font-semibold text-[#003781]">Latest Alerts</h2>
+
+            <div className="bg-[#F4F9FF] rounded-lg p-3 text-gray-600 mt-2">
+              5 Jan – New PMFBY update…
+            </div>
+
+            <button className="mt-3 flex items-center gap-2 text-[#003781] text-sm font-medium">
+              <Volume2 size={18} />
+              Tap to Listen
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  );
-}
-
-/* ===== SMALL COMPONENTS ===== */
-
-function InfoCard({ icon, title, desc }: any) {
-  return (
-    <div className="bg-[#EAF3FF] p-4 rounded-xl shadow-sm hover:shadow-md transition">
-      
-      <p className="mt-2 font-semibold text-center">{title}</p>
-      <p className="text-sm text-gray-600 text-center">{desc}</p>
-    </div>
-  );
-}
-
-function Stage({ label, active }: { label: string; active?: boolean }) {
-  return (
-    <div className="flex items-center gap-2 mb-2">
-      <div
-        className={`h-4 w-4 rounded-full ${
-          active ? "bg-[#003781]" : "bg-gray-300"
-        }`}
-      />
-      <span className={`${active ? "font-semibold" : "text-gray-600"} text-sm`}>
-        {label}
-      </span>
     </div>
   );
 }
