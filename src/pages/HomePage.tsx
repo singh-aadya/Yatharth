@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
 import NewsMarquee from "../components/NewsMarquee";
 import FeatureGrid from "../components/FeatureGrid";
+import ExploreLearningButton from "./ExploreLearningButton";
+
 
 export default function HomePage() {
   const { userName, setUserName, language } = useAppContext();
@@ -69,6 +71,10 @@ export default function HomePage() {
         <h2 className="text-2xl font-semibold text-[#003781] mb-8">
           Explore Services
         </h2>
+        <div className="mt-4 mb-6">
+          <ExploreLearningButton onClick={() => onNavigate("learning")} />
+        </div>
+
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
