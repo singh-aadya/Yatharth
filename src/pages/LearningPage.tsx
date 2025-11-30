@@ -1,5 +1,6 @@
 import React from "react";
 import { Play, ChevronRight, Volume2 } from "lucide-react";
+import PMFBY from "../assets/PMFBY.png";
 
 export default function LearningPage() {
   return (
@@ -129,6 +130,16 @@ export default function LearningPage() {
               <Volume2 size={18} />
               Tap to Listen
             </button>
+
+            {/* PMFBY Hero Image Section */}
+            <div className="w-full mt-10">
+              <img 
+                src={PMFBY} 
+                alt="Happy rural family under PMFBY scheme" 
+                className="w-full rounded-xl shadow-lg object-cover"
+              />
+            </div>
+
           </div>
         </div>
       </div>
