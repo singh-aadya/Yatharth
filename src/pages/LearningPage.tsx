@@ -61,19 +61,20 @@ export default function LearningPage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
                 <InfoCard
-                  icon="public/crop-icon.png"
+                 
                   title="Crop Risk"
                   desc="Covers crop loss due to rain"
                 />
 
                 <InfoCard
-                  icon="public/rupee-icon.png"
+                 
                   title="Benefit"
                   desc="Assured compensation"
                 />
 
                 <InfoCard
-                  icon="public/doc-icon.png"
+                  
+                  
                   title="Docs"
                   desc="Simple document steps"
                 />
