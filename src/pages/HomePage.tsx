@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
 import NewsMarquee from "../components/NewsMarquee";
+import FeatureGrid from "../components/FeatureGrid";
 
 export default function HomePage() {
   const { userName, setUserName, language } = useAppContext();
@@ -62,6 +63,7 @@ export default function HomePage() {
 
 
       {/* ================= FEATURE GRID ================= */}
+      <FeatureGrid />
       <section className="py-16 px-6 max-w-6xl mx-auto">
 
         <h2 className="text-2xl font-semibold text-[#003781] mb-8">
