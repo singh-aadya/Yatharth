@@ -11,9 +11,9 @@ export default function Navbar() {
     
 
     <header className="w-full bg-white shadow-sm py-4 px-8 flex justify-between items-center">
-      <nav className="flex items-center px-6 py-4 shadow bg-white">
+      <Link to="/" className="flex items-center px-6 py-4 shadow bg-white">
         <Logo size={46} />
-      </nav>
+      </Link>
       <Link to="/" className="text-2xl font-bold text-[#003781]">
         Yatharth
       </Link>
