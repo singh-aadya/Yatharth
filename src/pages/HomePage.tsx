@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
 import NewsMarquee from "../components/NewsMarquee";
 import FeatureGrid from "../components/FeatureGrid";
-import ExploreLearningButton from "./ExploreLearningButton";
+import ExploreLearningButton from "../components/ExploreLearningButton";
+
 
 
 export default function HomePage() {
