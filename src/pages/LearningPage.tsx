@@ -33,11 +33,7 @@ export default function LearningPage() {
           {/* LEFT: VIDEO THUMBNAIL */}
           <div className="lg:col-span-1 bg-white border border-[#D6DFEB] rounded-2xl shadow-sm p-4">
             <div className="relative rounded-xl overflow-hidden aspect-[9/16] group cursor-pointer shadow-md">
-              <img
-                src="/demo-video-thumb.jpg"
-                alt="Insurance Video"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
+              
               <div className="absolute inset-0 flex justify-center items-center">
                 <div className="bg-white bg-opacity-85 p-4 rounded-full shadow-lg">
                   <Play size={36} className="text-[#003781]" />
