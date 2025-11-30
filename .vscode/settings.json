@@ -1,0 +1,20 @@
+{
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/.git/**": true
+  },
+  "search.exclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true
+  },
+  "typescript.tsserver.watchOptions": {
+    "watchFile": "dynamicPriorityPolling"
+  },
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.tsserver.exclude": [
+    "node_modules",
+    "src/components/ui/**"
+  ]
+}

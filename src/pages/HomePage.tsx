@@ -9,6 +9,10 @@ import LearningPage from "../components/FeatureGrid";
 export default function HomePage() {
   const { userName, setUserName, language } = useAppContext();
 
+  function onNavigate(arg0: string): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <div className="min-h-screen bg-[#F2F4F8] text-[#003781]">
 
