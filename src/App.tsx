@@ -17,6 +17,7 @@ import SavedItemsPage from "./pages/SavedItemsPage";
 import FAQPage from "./pages/FAQPage";
 import AboutPage from "./pages/AboutPage";
 import ErrorFallbackPage from "./pages/ErrorFallbackPage";
+import LearningPage from "./pages/LearningPage";
 
 export default function App() {
   return (
@@ -37,6 +38,8 @@ export default function App() {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<ErrorFallbackPage />} />
+          <Route path="/Know" element={<LearningPage />} />
+
         </Routes>
       </Layout>
     </AppProvider>
