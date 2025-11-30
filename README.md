@@ -34,7 +34,7 @@ Links to BC Sakhis, CSCs, SHGs, and co-operative networks for digital + human hy
 Premium due alerts, renewal reminders, scheme enrollment windows, and claim status updates.
 
 ### 7. Accessibility Tools  
-Font resizing, high contrast mode, grayscale mode, and cleaner visual hierarchy inspired by Govt. of India accessibility standards.
+Font resizing, high contrast mode, grayscale mode, and cleaner visual hierarchy.
 
 ---
 
@@ -43,29 +43,6 @@ Font resizing, high contrast mode, grayscale mode, and cleaner visual hierarchy 
 **Frontend:** React (TypeScript), Vite, Tailwind CSS, Shadcn/UI  
 **State Management:** React Hooks, LocalStorage  
 **Deployment:** Vercel
-
----
-
-## 📁 Folder Structure
-
-/src
-/components
-HomePage.tsx
-LearningHub.tsx
-SurveyFlow.tsx
-GuidancePage.tsx
-ProcessGuidance.tsx
-WhatsAppBot.tsx
-LocalSupport.tsx
-NotificationPreferences.tsx
-...
-index.css
-main.tsx
-App.tsx
-index.html
-tailwind.config.js
-vite.config.ts
-
 
 ---
 
