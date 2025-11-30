@@ -14,9 +14,9 @@ export default function Navbar() {
       <Link to="/" className="flex items-center px-6 py-4 shadow bg-white">
         <Logo size={46} />
       </Link>
-      <Link to="/" className="text-2xl font-bold text-[#003781]">
+      {/* <Link to="/" className="text-2xl font-bold text-[#003781]">
         Yatharth
-      </Link>
+      </Link> */}
 
       <div className="flex items-center gap-4">
         {userName && (
