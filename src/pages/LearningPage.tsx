@@ -21,9 +21,9 @@ export default function LearningPage() {
               <Volume2 size={18} /> Hear Guide
             </button>
 
-            <div className="bg-[#003781] text-white px-4 py-1.5 rounded-lg font-semibold shadow-sm">
+            {/* <div className="bg-[#003781] text-white px-4 py-1.5 rounded-lg font-semibold shadow-sm">
               Hi, Suresh
-            </div>
+            </div> */}
           </div>
         </div>
 
