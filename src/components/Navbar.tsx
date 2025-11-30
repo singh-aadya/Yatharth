@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
 import Logo from "../components/Logo";
-
-
+import { Accessibility } from "lucide-react";
 
 export default function Navbar() {
   const { language, setLanguage, userName } = useAppContext();
@@ -19,7 +18,9 @@ export default function Navbar() {
       </Link> */}
 
       <div className="flex items-center gap-4">
+        <Accessibility size={20} className="text-[#003781]" />
         {userName && (
+          
           <span className="text-[#003781] font-medium">Hi, {userName}</span>
         )}
 
@@ -32,7 +33,15 @@ export default function Navbar() {
           <option value="hi">HI</option>
           <option value="pa">PA</option>
         </select>
+        
       </div>
+     
+
+      
+        
+        
+
+
     </header>
   );
 }
