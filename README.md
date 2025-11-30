@@ -38,6 +38,24 @@ Font resizing, high contrast mode, grayscale mode, and cleaner visual hierarchy.
 
 ---
 
+## 🧩 Why Yatharth?
+
+Rural India faces:
+
+low insurance awareness
+
+complex technical terminology
+
+irregular income cycles
+
+low trust in formal systems
+
+limited digital literacy
+
+Yatharth simplifies insurance through clear language, contextual guidance, and familiar support channels to build confidence in decision-making.
+
+---
+
 ## 🏗 Tech Stack
 
 **Frontend:** React (TypeScript), Vite, Tailwind CSS, Shadcn/UI  
@@ -54,20 +72,3 @@ cd yatharth
 npm install
 npm run dev
 Visit: http://localhost:5173
-
-🧩 Why Yatharth?
-
-Rural India faces:
-
-low insurance awareness
-
-complex technical terminology
-
-irregular income cycles
-
-low trust in formal systems
-
-limited digital literacy
-
-Yatharth simplifies insurance through clear language, contextual guidance, and familiar support channels to build confidence in decision-making.
-
