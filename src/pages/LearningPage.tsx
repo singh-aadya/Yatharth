@@ -148,7 +148,7 @@ export default function LearningPage() {
 function InfoCard({ icon, title, desc }: any) {
   return (
     <div className="bg-[#EAF3FF] p-4 rounded-xl shadow-sm hover:shadow-md transition">
-      <img src={icon} alt={title} className="h-10 mx-auto" />
+      
       <p className="mt-2 font-semibold text-center">{title}</p>
       <p className="text-sm text-gray-600 text-center">{desc}</p>
     </div>
