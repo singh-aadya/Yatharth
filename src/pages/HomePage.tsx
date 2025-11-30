@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
+import NewsMarquee from "../components/NewsMarquee";
 
 export default function HomePage() {
   const { userName, setUserName, language } = useAppContext();
@@ -57,6 +58,8 @@ export default function HomePage() {
           />
         </div>
       </section>
+      <NewsMarquee />
+
 
       {/* ================= FEATURE GRID ================= */}
       <section className="py-16 px-6 max-w-6xl mx-auto">
