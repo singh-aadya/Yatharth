@@ -38,7 +38,7 @@ export default function App() {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<ErrorFallbackPage />} />
-          <Route path="/Know" element={<LearningPage />} />
+          <Route path="/know" element={<LearningPage />} />
 
         </Routes>
       </Layout>
