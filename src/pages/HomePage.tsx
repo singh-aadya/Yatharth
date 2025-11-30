@@ -4,6 +4,7 @@ import NewsMarquee from "../components/NewsMarquee";
 import FeatureGrid from "../components/FeatureGrid";
 import ExploreLearningButton from "../components/ExploreLearningButton";
 import LearningPage from "../components/FeatureGrid";
+import { useNavigate } from "react-router-dom";
 
 
 export default function HomePage() {
@@ -77,7 +78,7 @@ export default function HomePage() {
           Explore Services
         </h2>
         <div className="mt-4 mb-6">
-          <ExploreLearningButton onClick={() => onNavigate("know")} />
+          <ExploreLearningButton onClick={() => onNavigate("/know")} />
         </div>
 
 
