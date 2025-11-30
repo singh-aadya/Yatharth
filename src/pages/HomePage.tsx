@@ -3,7 +3,7 @@ import { useAppContext } from "../context/AppContext";
 import NewsMarquee from "../components/NewsMarquee";
 import FeatureGrid from "../components/FeatureGrid";
 import ExploreLearningButton from "../components/ExploreLearningButton";
-
+import LearningPage from "../components/FeatureGrid";
 
 
 export default function HomePage() {
