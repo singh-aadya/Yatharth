@@ -1,0 +1,44 @@
+<svg width="1920" height="700" viewBox="0 0 1920 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- MAIN BLUE OVERLAY -->
+    <linearGradient id="blueOverlay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0,55,129,0.80)"></stop>
+      <stop offset="100%" stop-color="rgba(0,80,160,0.75)"></stop>
+    </linearGradient>
+
+    <!-- SKY GRADIENT -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9CC4F1"></stop>
+      <stop offset="70%" stop-color="#E8F1FF"></stop>
+    </linearGradient>
+
+    <!-- FIELD GRADIENT -->
+    <linearGradient id="fieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9BBF52"></stop>
+      <stop offset="100%" stop-color="#6F9431"></stop>
+    </linearGradient>
+
+    <!-- ICON SHAPE (Yatharth motif: shield + leaf) -->
+    <clipPath id="iconClip">
+      <path d="M960 100 L1030 140 V210 C1030 300 975 370 960 380 C945 370 890 300 890 210 V140 Z"></path>
+    </clipPath>
+  </defs>
+
+  <!-- SKY -->
+  <rect width="1920" height="400" fill="url(#skyGrad)"></rect>
+
+  <!-- FIELDS (abstract waves) -->
+  <path d="M0 350 Q 480 300 960 360 T 1920 350 L1920 700 L0 700 Z" fill="url(#fieldGrad)" opacity="0.9"></path>
+
+  <path d="M0 430 Q 600 380 960 440 T 1920 420 L1920 700 L0 700 Z" fill="#7AA63B" opacity="0.8"></path>
+
+  <!-- YATHARTH EMBLEM (subtle background icon) -->
+  <g clip-path="url(#iconClip)" transform="translate(-470,140) scale(1.8)">
+    <rect x="890" y="100" width="140" height="300" fill="#003781" opacity="0.15"></rect>
+    <rect x="890" y="100" width="140" height="300" fill="#ffffff" opacity="0.08"></rect>
+  </g>
+
+  <!-- BLUE OVERLAY FOR TEXT -->
+  <rect width="1920" height="700" fill="url(#blueOverlay)"></rect>
+
+</svg>
